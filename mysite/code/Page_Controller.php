@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\CMS\Controllers\ContentController;
+
 class Page_Controller extends ContentController
 {
     /**

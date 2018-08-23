@@ -1,4 +1,6 @@
 <?php
+namespace SS\Test\Polymorphic;
+use SilverStripe\ORM\DataObject;
 
 class ZFan extends DataObject {
 
@@ -6,9 +8,11 @@ class ZFan extends DataObject {
         "Title" => "Varchar"
     );
 
+    private static $table_name = 'ZFan';
+
     // Generates columns FanOfID and FanOfClass
     private static $has_one = array(
-        "FanOf" => "DataObject"
+        "FanOf" => DataObject::class
     );
 
     public function requireDefaultRecords() {
