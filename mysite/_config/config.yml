@@ -8,3 +8,8 @@
 #  theme: simple
 #SilverStripe\Dev\Debug:
 #  friendly_error_httpcode: true
+SilverStripe\ORM\DatabaseAdmin:
+  classname_value_remapping:
+    Player: SS\Test\Polymorphic\Player
+    Team: SS\Test\Polymorphic\Team
+    ZFan: SS\Test\Polymorphic\ZFan
