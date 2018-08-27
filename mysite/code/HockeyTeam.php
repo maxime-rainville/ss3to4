@@ -1,4 +1,5 @@
 <?php
+namespace SS\Test\Polymorphic;
 
 class HockeyTeam extends Team {
 

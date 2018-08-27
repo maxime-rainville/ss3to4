@@ -1,6 +1,8 @@
 <?php
 namespace SS\Test\Polymorphic;
 use SilverStripe\ORM\DataObject;
+use SilverStripe\Versioned\Versioned;
+
 
 class ZFan extends DataObject {
 
@@ -16,7 +18,7 @@ class ZFan extends DataObject {
     );
 
     private static $extensions = array(
-        'Versioned("Stage","Live")'
+        Versioned::class
     );
 
     public function requireDefaultRecords() {
@@ -43,7 +45,7 @@ class ZFan extends DataObject {
 
         $fan3->Title = 'Bob';
         $fan3->write();
-        $fan3->writeToStage(Versioned::LIVE);
+        $fan3->publishSingle();
 
 
 

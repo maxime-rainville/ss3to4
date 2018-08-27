@@ -12,4 +12,5 @@ SilverStripe\ORM\DatabaseAdmin:
   classname_value_remapping:
     Player: SS\Test\Polymorphic\Player
     Team: SS\Test\Polymorphic\Team
+    HockeyTeam: SS\Test\Polymorphic\HockeyTeam
     ZFan: SS\Test\Polymorphic\ZFan
