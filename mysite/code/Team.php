@@ -15,6 +15,8 @@ class Team extends DataObject {
     );
 
     private static $default_records = array(
-        array('Title' => 'Montreal Canadiens')
+        array(
+            'Title' => 'Montreal Expos'
+        )
     );
 }
