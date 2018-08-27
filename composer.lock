@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a10d07f46783a832ec429f47cef1e56d",
+    "content-hash": "f52bcbf146deff1c904d6e1db11d3f11",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1548,6 +1548,57 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "GraphQL server for SilverStripe models and other data",
             "time": "2018-04-16T02:16:59+00:00"
+        },
+        {
+            "name": "silverstripe/postgresql",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-postgresql.git",
+                "reference": "4c89d103c519314034af1d2ebc7b7cb2fc1f68b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-postgresql/zipball/4c89d103c519314034af1d2ebc7b7cb2fc1f68b2",
+                "reference": "4c89d103c519314034af1d2ebc7b7cb2fc1f68b2",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "2.x-dev": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\PostgreSQL\\": "code/",
+                    "SilverStripe\\PostgreSQL\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "SilverStripe now has tentative support for PostgreSQL ('Postgres')",
+            "keywords": [
+                "database",
+                "postgresql",
+                "silverstripe"
+            ],
+            "time": "2018-07-13T16:42:10+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",
@@ -3783,7 +3834,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/recipe-cms": 20
+        "silverstripe/recipe-cms": 20,
+        "silverstripe/postgresql": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
