@@ -11,5 +11,6 @@ _ss_environment.php
 /assets/
 /siteconfig/
 /reports/
+/postgresql/
 
 .idea

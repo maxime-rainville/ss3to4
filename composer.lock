@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0042e99e2b171307d888b207b60266a0",
+    "content-hash": "9d74a27811d77eba9416e084087299fd",
     "packages": [
         {
             "name": "composer/installers",
@@ -345,6 +345,44 @@
                 "silverstripe"
             ],
             "time": "2018-07-17T19:53:41+00:00"
+        },
+        {
+            "name": "silverstripe/postgresql",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-postgresql.git",
+                "reference": "2d11336dce1176d761e02d78d5e7e0f5ff6ec85a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-postgresql/zipball/2d11336dce1176d761e02d78d5e7e0f5ff6ec85a",
+                "reference": "2d11336dce1176d761e02d78d5e7e0f5ff6ec85a",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^3.2"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "1.x-dev": "1.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                }
+            ],
+            "description": "SilverStripe now has tentative support for PostgreSQL ('Postgres')",
+            "keywords": [
+                "database",
+                "postgresql",
+                "silverstripe"
+            ],
+            "time": "2017-12-07T03:26:06+00:00"
         },
         {
             "name": "silverstripe/reports",
@@ -1840,10 +1878,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/cms": 20,
-        "silverstripe/framework": 20,
-        "silverstripe/reports": 20,
-        "silverstripe/siteconfig": 20
+        "silverstripe/postgresql": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
